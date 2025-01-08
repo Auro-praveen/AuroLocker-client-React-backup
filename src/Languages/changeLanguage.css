@@ -1,0 +1,43 @@
+.choose-lang-container {
+    float: right;
+    /* margin-top: 10px !important; */
+    padding: 0px !important;
+  }
+
+  .language-change-select {
+    width: 150px !important;
+    background-color: #bb540f !important;
+    border: 0px !important;
+    
+    border-radius: 5px !important;
+    border-radius: 5px;  /* Rounded corners */
+    color: #fdfdfd !important;
+    
+  }
+
+
+  .language-select {
+    color: #ffffff !important;
+    border-radius: 5px !important;
+    border: 1px solid #333 !important;
+  }
+
+  .language-select:hover {
+    border: 1px solid #333 !important;
+    outline: none;
+  }
+
+  .language-select:focus  {
+    border: 1px solid #333 !important;
+    outline: none;
+  }
+
+  .language-select::selection {
+    border: 1px solid #333 !important;
+    outline: none;
+  }
+
+  .language-label{
+    color: #1E367B;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }

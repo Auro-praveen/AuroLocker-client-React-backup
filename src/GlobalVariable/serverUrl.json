@@ -1,0 +1,6 @@
+{
+    "path":"http://192.168.0.186:8080/AuroLocker/AuroClientRequest",
+    "localPath": "http://192.168.0.186:8081/AuroAutoLocker/",
+    "templeLockerPath" : "http://192.168.0.182:8080/AuroTempleLBEngine/AuroClientRequest",
+    "templeLockerPathasas" : "http://192.168.0.182:8080/AuroAutoLocker/"
+}

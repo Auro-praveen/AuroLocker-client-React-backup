@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&family=Kanit:wght@500&family=Merriweather:wght@400;700&family=Oswald:wght@300;500&family=Ubuntu:wght@500;700&display=swap');
+.paymentSuccess-container {
+    margin: auto;
+}
+
+.success-wind {
+  box-shadow: 0px 0px 8px 2px #1E367B;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20%;
+}
+
+.pay-success-container {
+    padding: 10px;
+    width: fit-content;
+    min-height: 88vh;
+    margin: auto;
+}
+
+.success-header-container{
+    margin-top: 10px;
+    color: rgb(3, 83, 0);
+    font-weight: 500;
+    /* text-transform: capitalize; */
+}
+
+.pay-success-header {
+    color: #1E367B !important;
+}
+
+.buttons-container {
+    margin: 20px 15px;
+    
+}
+
+/* .success-svg {
+    width: 40%;
+} */
+
+.post-pay-container {
+    padding: 40px;
+    width: fit-content;
+    margin: 130px auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 8px rgb(214, 214, 214);   
+}
+
+.app-final-container {
+    height: 69vh !important;
+}
+
+.btn-container-post {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.item-header-postpay{
+    margin-top: 5px;
+    color: #1E367B;
+    font-family: 'Heebo', sans-serif;
+    /* text-transform: capitalize; */
+}
+
+.item-sub-header {
+    color: #F17829;
+    font-weight: 400;
+    font-size: 20px;
+    /* text-transform: capitalize; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo-container-success {
+    margin: -20px 0px;
+}
+
+
+@media  screen and (max-width: 600px) {
+    .post-pay-container {
+        padding: 40px;
+        width: fit-content;
+        margin: auto;
+        margin-top: 25%;
+        width: 95%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        box-shadow: 0px 0px 8px 8px rgb(214, 214, 214);   
+    }
+
+    .pay-success-container {
+        margin-top: 5%;
+        min-height: 78vh;
+    }
+    
+}

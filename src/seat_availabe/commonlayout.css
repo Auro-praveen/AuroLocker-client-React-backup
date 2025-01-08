@@ -1,0 +1,21 @@
+.layout-container-small-layout{
+    position: relative;
+    /* height: 70vh !important; */
+    /* margin: 10px !important; */
+    width: 53vh !important;
+    margin: auto;
+    /* overflow: scroll; */
+}
+
+.layout-container-large-layout{
+    position: relative;
+    /* height: 70vh !important; */
+    /* margin: 10px !important; */
+    width: 78vh !important;
+    margin: auto;
+    /* overflow: scroll; */
+}
+
+.mui-lowerMargin {
+    margin-bottom: 50px !important;
+}

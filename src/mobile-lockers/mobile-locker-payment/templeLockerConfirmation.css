@@ -1,0 +1,63 @@
+.mobile-lock-verifydetails-container {
+    /* display: flex;
+    flex-direction: column; */
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+    position: relative;
+}
+
+
+.verifydetais-item-container{
+    padding: 10px;
+    /* margin-right: 50px !important; */
+    margin-top: 60px;
+    width: 80%;
+    margin-bottom: 120px;
+    margin: auto;
+    background-color: rgba(107, 138, 128, 0.637);
+    border-radius: 5px;
+}
+
+.temple-lockers-paysuccess{
+    margin: auto !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-top: 25px !important;
+}
+
+.verifyLocker-open-container{
+    
+    width: 80%;
+    margin: auto;
+    color: #1E367B;
+    margin-top: 10px;
+}
+
+/* .mobile-locker-header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: crimson;
+    font-family: Geneva, Tahoma, sans-serif;
+} */
+
+.mobile-locker-countdown{
+    width: 100px;
+    height: 80px;
+    padding: 5px;
+    box-shadow: 0px 0px 6px 4px #635f5f;
+    background-color: #df8549;
+    border-radius: 5px;
+    margin: 40px auto;
+    /* margin-bottom: 10px; */
+}
+
+.mobileLocker-success-continer{
+    padding: 20px;
+}
+
+.mobilelocker-bookingSuccess-container{
+    background-color: #F17829;
+    border-radius: 5px 5px 0px 0px;
+}

@@ -1,0 +1,31 @@
+.float {
+    float: none;
+}
+.form-group{
+    position: relative;
+}
+input {
+    display: block;
+    padding:10px 10px 10px 20px;
+    width:195px;
+} 
+.unit { 
+    position: relative; 
+    display: block; 
+    left: 15px; 
+    top: -5px; 
+    z-index: 9; 
+  }
+  .resendotp {
+      text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .otp{
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  .error{
+    color: red;
+    top:-5px;
+  }

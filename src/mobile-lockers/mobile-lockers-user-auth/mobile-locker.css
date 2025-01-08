@@ -1,0 +1,38 @@
+
+
+.mobile-locker-assigned {
+    /* margin: auto !important; */
+    margin: 0px;
+    margin-bottom: -10px;
+    width: 100%;
+    background-color: rgb(153, 118, 189) ;
+    text-align: center;
+    align-content: center;
+    
+}
+
+.no-image-canvas{
+    display: none;
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.mobilelocker-descr-container {
+    /* margin-bottom: 15px !important; */
+}
+
+.mobile-locker-design{
+
+    margin: 30px auto !important;
+    /* margin-top: 40px; */
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #df8549;
+    color: #1E367B;
+    box-shadow: 0px 0px 4px 2px #1E367B !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+

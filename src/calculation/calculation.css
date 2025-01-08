@@ -1,0 +1,43 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .main{
+    position: relative;
+    margin-right:auto; 
+    margin-left:auto ;
+    }
+    .inputField{
+      outline: none;
+      padding: 16px 22px;
+      border: 1px solid #dadce0;
+      font-size:18px;
+      border-radius:5px;
+      }
+    .inputField:focus{
+      border: 2px solid royalblue;
+      }
+    .labels{
+      color: #8d8d8d;
+      position: absolute;
+      top: 27px;
+      left: 55px;
+      background: #ffffff;
+      transition: 300ms;
+      transform: translate(-50%, -50%);
+    }
+     .inputField:valid + .labels{ 
+      top: -1px;
+      padding: 0 3px;
+      font-size:14px;
+      color: #8d8d8d;
+    
+    }
+    
+     .inputField:focus + .labels {
+      padding: 0 3px;
+      font-size:14px;
+      color: royalblue;
+      transition: 300ms;
+    
+    }

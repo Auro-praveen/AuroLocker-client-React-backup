@@ -1,0 +1,38 @@
+.retrive-pay-wind {
+    box-shadow: 0px 0px 8px 3px #a8a8a8;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    width: fit-content;
+    margin: 50px auto;
+}
+
+.container-item-header {
+    color: #1E367B;
+    margin-top: -10px;
+    text-transform: capitalize;
+}
+
+.retrive-payment-container {
+    padding: 10px;
+}
+
+.balance-amount {
+    color: crimson;
+}
+
+.balance-amount-container {
+    box-shadow: 0px 0px 4px 0px #1E367B;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    color: #132353;
+}
+
+.retr-pay-fail-wind {
+    padding: 10px;
+    margin-top: -30px !important;
+    margin: auto;
+    width: 300px;
+}

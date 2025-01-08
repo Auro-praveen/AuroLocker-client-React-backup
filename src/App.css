@@ -1,0 +1,48 @@
+html,
+body {
+  /* box-sizing: border-box; */
+  padding: 0px !important;
+  margin: 0px !important;
+  background-color: rgb(221, 231, 250);
+  color: rgb(0, 0, 0) !important;
+  
+}
+
+.App {
+  text-align: center;
+  padding: 0px !important;
+  margin: 0px !important;
+  /* background-color: rgb(237, 238, 240); */
+  background-color: rgb(221, 231, 250);
+}
+
+/* body {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+} */
+
+a, Link{
+  text-decoration: none !important;
+}
+
+.mui-btn-color-yellow {
+  background-color: #F17829 !important;
+}
+
+img {
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+/* img:hover {
+  transform: scale(1.1);
+} */
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: inherit;
+  letter-spacing: 1px;
+}
+
+input {
+  outline: none;
+}

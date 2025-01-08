@@ -1,0 +1,31 @@
+.error-maincontainer{
+    margin: 30px;
+    margin-top: 100px;
+}
+
+.error-path-container{
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 0px 0px 4px 2px #1E367B;
+    border-radius: 4px;
+    padding: 20px;
+    width: fit-content;
+}
+
+.error-logo{
+    margin-top: -60px;
+}
+
+.error-logo:hover {
+    transform: none;
+}
+
+.error-path-content-container{
+    width: fit-content;
+    padding: 40px;
+    box-shadow: 0px 0px 2px 1px #F17829;
+    border-radius: 4;
+    margin: auto;
+    color: crimson;
+    margin-top: -30px;
+}

@@ -1,0 +1,33 @@
+
+.tuckit-footer {
+    width: 100%;
+    /* background-color: #333; */
+    background-color: #00133b;
+    color: white;
+    text-align: center;
+    height: max-content !important;
+    padding: 1rem;
+}
+
+.foot-logo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.foot-logo {
+    margin: 2px 9px !important;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth hover effect */
+}
+
+.foot-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    filter: brightness(1.4); /* Make it slightly brighter */
+}
+
+@media only screen and (max-width: 480px) {
+    .tuckit-footer {
+        background-color: #00133b;
+        height: 150px !important;
+    }   
+  }

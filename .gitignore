@@ -1,0 +1,60 @@
+# Node modules
+node_modules/
+
+# Build directories
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+.DS_Store
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Cache directories
+.cache/
+*.cache/
+
+# System files
+Thumbs.db
+*.bak
+*.orig
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Desktop.ini
+
+# Ignore ESLint cache
+.eslintcache
+
+# Ignore Storybook static files
+storybook-static/
+
+# Ignore test output
+junit.xml
+
+# Ignore other IDE settings (optional)
+*.iml

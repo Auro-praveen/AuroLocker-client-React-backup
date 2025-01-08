@@ -1,0 +1,295 @@
+{
+    "QRCodeScan":{
+      "QRCodeScanner" : "अपने आइटम को स्टोर करने (रखने) या पुनः प्राप्त करने (उठाने) के लिए, कृपया क्यूआर कोड को स्कैन करें। (जीपीएस एक्सेस के लिए स्थान सक्षम करें)।",
+    "QRCodeScannerOld": "कृपया आगे बढ़ने के लिए QR कोड स्कैन करें"
+    },
+
+    "LocationAcceptPage":{
+         "getLocation": "स्थान प्राप्त करें",
+  "grantPermissionLocation": "अपने वर्तमान स्थान तक पहुँचने की अनुमति प्रदान करें",
+  "locationAlertTitle": "वर्तमान स्थान आवश्यक है",
+  "LocationAcceptAlerrt": "कृपया आगे बढ़ने के लिए स्थान पहुंच की अनुमति दें।",
+  "OKBtn": "ठीक है",
+  "locationAccessDesc1" : "सेटिंग पर जाएं",
+  "locationAccessDesc2" : "साइट सेटिंग",
+  "locationAccessDesc3" : "लोकेशन",
+  "locationAccessDesc4" : "स्थान पहुंच की अनुमति दें और जारी रखने के लिए पुनः प्रयास करें"
+    },
+    
+    "Customerdetails":{
+        "plzfillDetailsAlert": "कृपया सभी विवरण भरें",
+  "detailsenter": "एक बार उपयोगकर्ता पंजीकरण",
+  "SelectItemAlert": "कृपया वह आइटम चुनें जिसे आप संग्रहीत करना चाहते हैं",
+  "ItemStore": "वह वस्तु जिसे आप संग्रहित करना चाहते हैं",
+  "pendingBalance": "आपके पिछले लॉकर उपयोग से शेष राशि लंबित है",
+  "note": "टिप्पणी :",
+  "pending": "का बकाया है",
+  "pendingTwo": "पिछले लेनदेन से|.",
+  "existingUserBalanceAmount": "चेकआउट के दौरान देय राशि वर्तमान लेनदेन में जोड़ दी जाएगी।",
+  "ok": "ठीक है",
+  "UsermobNo": "मोबाइल नंबर",
+  "UserName": "उपयोगकर्ता नाम",
+  "dob": "जन्मतिथि",
+  "proceed": "आगे बढ़ना",
+  "Date": "तारीख",
+  "Month": "महीना",
+  "Year": "वर्ष",
+  "Helmate": "हेलमेट",
+  "Bag pack": "बैग पैक",
+  "Laptop Bag": "लैपटॉप बैग",
+  "Trolley Bag (Cabin)": "ट्रॉली बैग (केबिन)",
+  "Shopping Bag": "शॉपिंग बैग",
+  "Duffle Bag": "डफल बैग",
+  "Large Suitcase": "बड़ा स्यूटकेस",
+  "Other": "अन्य"
+    },
+ 
+    "OpeningPage":{
+       "hello": "नमस्ते",
+  "welcometitle": "TUCKIT में आपका स्वागत है",
+  "storeBtn": "रखें (स्टोर)",
+  "retrieveBtn": "पिकअप (पुनर्प्राप्ति)"
+    },
+
+    "LoginPage":{
+       "authenticateTitle": "प्रमाणीकरण",
+  "termsAlert": "कृपया नियम एवं शर्तें स्वीकार करें",
+  "EnterValidMobNoAlert": "अमान्य मोबाइल नंबर",
+  "mobileNo": "मोबाइल नंबर दर्ज करें",
+  "LockerLimitExceed": "आपके मोबाइल नंबर के लिए लॉकर बुकिंग की सीमा पार हो गई है।",
+  "Retrieve3Lockers": "कृपया अपना सामान एकत्र करने के बाद पुनः प्रयास करें।",
+  "retrieveLock": "प्रवेश अनलॉक करें",
+  "termschbox": "नियम और शर्तें",
+  "otpBtn": "ओटीपी जनरेट करें",
+  "deviceInactive": "लॉकर सेवा अस्थायी रूप से निलंबित है!",
+  "deviceInactiveDesc": "हम बेहतर अनुभव के लिए अपग्रेड कर रहे हैं। कृपया कुछ देर बाद प्रयास करें। असुविधा के लिए खेद है|."
+    },
+    
+    "LoginOTP":{
+          "otpTitle": "अपना ओटीपी दर्ज करें",
+  "ValidOTPAlert": "कृपया वैध ओटीपी दर्ज करें",
+  "otpTxt": "ओ.टी.पी",
+  "resendOTP": "ओटीपी दोबारा भेजें",
+  "otpConfirmBtn": "ओटीपी की पुष्टि करें",
+  "OTPAlert": "ओटीपी मैच नहीं हुआ",
+  "timeup": "समय पूर्ण हुआ"
+    },
+    
+    "LockerReservationPage":{
+         "lockerReservationTitle": "अपना आदर्श लॉकर चुनें",
+  "availablelocks": "उपलब्ध",
+  "occupiedlocks": "कब्ज़ा होना",
+  "selectedlocks": "चयनित",
+  "chooseLocksAgain": "फिर से ताले चुनें",
+  "exitAlert": "क्या आपकी वाकई छोड़ने की इच्छा है?",
+  "YouBookedAll3Locker": "आपने सभी 3 ताले बुक कर लिए हैं, ताले प्राप्त करने के बाद प्रयास करें।, लॉक उठाने के बाद पुन: प्रयास करें।",
+  "ThankYou": "धन्यवाद।",
+  "size": "आकार",
+  "itemsToStore": "1 या 2 फिट बैठता है",
+  "small": "छोटा",
+  "medium": "मध्यम",
+  "larger": "बड़ा",
+  "extra large": "एक्स्ट्रा लार्ज",
+  "itemToStoreContn": "आइटम, (संदर्भ के लिए छवियाँ)",
+  "close": "बंद करना",
+  "chooseLockertostore": "भंडारण के लिए लॉकर चुनें",
+  "selectLockerAlert": "कृपया एक लॉक चुनें",
+  "yes": "हाँ",
+  "no": "नहीं",
+  "confirmBookingBtn": "आगे बढ़ना...",
+  "cancelBtn": "रद्द करना",
+  "logoutBtn": "लॉग आउट",
+  "payWaitAlert" : "भुगतान के लिए आगे बढ़ें",
+  "payWaitDescription": "सफल भुगतान के बाद, दरवाजा खुलने तक ऐप को खुला रखें। यदि ऐसा नहीं होता है, तो 7204076777 पर कॉल करें.",
+  "payNowBtn" : "अब भुगतान करें"
+    },
+
+    "LockerStoreingTime":{
+       "LockerStoreingTimeTitle": "स्टोर अवधि",
+  "nextBtn": "आगे बढ़ना",
+  "minute": "मिनट",
+  "1 hour": "1 घंटा",
+  "3 hour": "3 घंटा",
+  "5 hour": "5 घंटा",
+  "8 hour": "8 घंटा",
+  "12 hour": "12 घंटा"
+    },
+
+    "TypePasscode":{
+         "AlreadyGenerated": "पासकोड पहले ही जनरेट हो चुका है",
+  "PasscodeTitle": "4 अंकीय पासकोड दर्ज करें",
+  "enterPasscode": "पासकोड दर्ज करें",
+  "fourdigitpasscodeAlert": "पासकोड 4 अंक का होना चाहिए",
+  "MandatoryMsg": "सामान एकत्रित करने के लिए अनिवार्य",
+  "passcodeTxtBox": "पासकोड",
+  "reconfirmPasscode": "पासकोड की पुन: पुष्टि करें",
+  "rememberAlert": "पासकोड याद रखें, इसे किसी के साथ साझा न करें!",
+  "ok": "ठीक है",
+  "proceed": "आगे बढ़ना",
+  "verifyPasscodeTxtBox": "पासकोड सत्यापित करें",
+  "confirmBtn": "पुष्टि करना"
+    },
+
+    "SelectedLockerData":{
+      "VerifyDetails": "बुकिंग विवरण",
+  "exitAlert": "क्या आपकी वाकई छोड़ने की इच्छा है?",
+  "wanttoleaveApplicationAlert": "यदि आप इस एप्लिकेशन को बंद करते हैं, तो आपके द्वारा दर्ज किए गए सभी विवरण खो जाएंगे।",
+  "terminalIDLbl": "टर्मिनल आईडी",
+  "userName": "उपयोगकर्ता नाम",
+  "mobileno": "मोबाइल नंबर",
+  "lockerSelected": "चयनित लॉकर",
+  "totalTime": "कुल समय",
+  "totalAmount": "कुल राशि",
+  "BalanceAmount": "पिछले लॉकर उपयोग से शेष राशि",
+  "totAmount": "मात्रा",
+  "GST": "18.0% जीएसटी जोड़ा गया",
+  "include GST": "जिसमें जीएसटी भी शामिल है",
+  "proceedBtn": "अब भुगतान करें",
+  "paywhileretrive": "बाद में भुगतान करें",
+  "singleLockerAmountEdited": "चयनित लॉकर राशि",
+  "singleLockerAmount": "राशि",
+  "backBtn": "वापस जाएँ",
+  "changeLockerBtn": "डिफ लॉकर चुनें",
+  "confirmBtn" : "पुष्टि करना"
+    },
+   
+    "VerifyingLockOpen":{
+         "LockerJustOccupied": "उफ़! चयनित लॉकर उपलब्ध नहीं है.",
+  "PleaseChooseAnotherLocker": "कृपया कोई अन्य लॉकर चुनें.",
+  "BackToLocker": "पीछे",
+  "VerifyingLockOpenMsg": "दरवाज़ा अंदर खुल रहा है",
+  "VerifyPayment": "भुगतान का सत्यापन",
+  "VerifyingYourPayment": "अपना भुगतान सत्यापित करें",
+  "Backto": "वापस जाएँ",
+  "ChooseLock": "लॉकर चुनें..",
+  "LockOpenFailedAlertMsg": "दरवाज़ा खुलने में विफल रहा कृपया पुनः प्रयास करें",
+  "Retry": "पुन: प्रयास",
+  "Cancel": "रद्द करना",
+  "somethingwentwrongAlert": "कुछ गलत हो गया",
+  "SomethingAlertMsg": "सहायता के लिए 7204076777 पर ग्राहक सेवा से संपर्क करें"
+    },
+    
+
+    "PaymentSuccessful":{
+        "PayFailed": "भुगतान विफल रही",
+  "WantStorePayLater": "क्या आप अभी भंडारण करना चाहते हैं और बाद में भुगतान करना चाहते हैं?",
+  "StoreNow": "अभी स्टोर करें",
+  "Cancel": "रद्द करें",
+  "PaymentSuccessfull": "दरवाजा सफलतापूर्वक खुल गया",
+  "YourPaymentSuccessfulMsg": "आपका भुगतान सफल है",
+  "PaymentFailedMsg": "आपका भुगतान विफल रहा! पुनः प्रयास करें",
+  "PaymentSuccessful": "भुगतान सफल प्राप्त हुआ",
+  "PaymentWasSuccess": "आपका भुगतान सफल रहा!",
+  "thankLabel": "उपयोग करने के लिए आपका धन्यवाद",
+  "niceday": "सुरक्षित, सरल और तनाव मुक्त",
+  "chooseAnotherLockerBtn": "अधिक लॉकर जोड़ें",
+  "cancelBtn": "रद्द करें",
+  "logoutBtn": "लॉग आउट",
+  "close": "बंद करना"
+    },
+
+    "RetrievePage":{
+        "RetreiveAlert": "कृपया वैध विवरण प्रदान करें|",
+  "PasscodeTitle": "अपना सामान लेने के लिए विवरण दर्ज करें।",
+  "mobileNo": "मोबाइल नंबर",
+  "VerifyingMobNo": "पंजीकृत मोबाइल नंबर दर्ज करें",
+  "passcodeLabel": "पासकोड",
+  "ValidPasscodeAlert": "ग़लत पासकोड",
+  "confirmBtn": "पुष्टि करना",
+  "forgotPasscodeBtn": "पासकोड भूल गए",
+  "VerifyingOTP": "यहां ओटीपी वेरिफाई करें",
+  "generatingotp": "ओटीपी जनरेट हो रहा है...",
+  "generateotp": "ओटीपी जनरेट करें",
+  "resendOTP": "ओटीपी पुनः भेजें?",
+  "InvalidMobNo": "ग़लत मोबाइल नंबर",
+  "ValidMobNoAlert": "ग़लत मोबाइल नंबर",
+  "Generating": "उत्पादक",
+  "VerifyOTP": "ओटीपी सत्यापित करें",
+  "makePayment": "भुगतान करें",
+  "paymentPendingInRetrieve": "आपका भुगतान ",
+  "paymentPendingInRetrieveTwo": "देय है, क्योंकि आपने पोस्ट पे विकल्प चुना है।",
+  "otp": "ओ.टी.पी",
+  "timesup": "समय समाप्त",
+  "duePaymentAlert": "भुगतान राशि",
+  "Confirm": "पुष्टि करना",
+  "selectretrievinglock": "लॉकर का चयन करें",
+  "openLockerBtn": "खुला दरवाज़ा",
+  "cancle": "रद्द करें"
+    },
+    
+    "RetrieveOption":{
+       "note": "टिप्पणी :",
+  "PartialRetrieve": "आंशिक पुनर्प्राप्ति",
+  "FullRetrieve": "पूर्ण पुनर्प्राप्ति",
+  "FullRetrieveInfo": "पूर्ण पिकअप",
+  "FullretriveInfoAlert": "पूर्ण पिकअप : ",
+  "transactionComplete": "लेन-देन पूर्ण",
+  "Retrievedescription": "विवरण पुनः प्राप्त करें",
+  "LockIsOpenNow": "अभी दरवाजा खुला है",
+  "fullretrieve": "पूरी बुकिंग",
+  "fullretrieveAlert": "सभी सामान उठाएं और दरवाजा सुरक्षित रूप से बंद करें। नई बुकिंग के लिए लॉकर उपलब्ध, नियम एवं शर्तें लागू।",
+  "partialretrivepage": "आंशिक बुकिंग ",
+  "partialretriveInfo": "आंशिक पिकअप",
+  "partialretriveInfoAlert": "आंशिक पिकअप",
+  "RetrieveDescription": "आइटम सफलतापूर्वक एकत्र होने तक बुकिंग सक्रिय है। अतिरिक्त उपयोग के लिए अतिरिक्त शुल्क लागू (यदि कोई हो), नियम एवं शर्तें लागू।",
+  "RetrieveDescriptionUpdated": "आपके बुकिंग समय से 30 या 60 मिनट के बाद सेवा का शुल्क लिया जाएगा। अपने सभी आइटम लेने के लिए, पूर्ण बुकिंग चुनें। कृपया ध्यान रखें कि अतिरिक्त उपयोग शुल्क लागू हो सकता है, नियम एवं शर्तें लागू होंगी।",
+  "paymentdue": "अगले लेन-देन के लिए भुगतान देय है",
+  "excessTimeUsage": "अतिरिक्त उपयोग",
+  "load": "लोड हो रहा है...",
+  "postpay": "भुगतान",
+  "totalhour": "कुल घंटा",
+  "Total amount": "कुल राशि",
+  "postandexcesspay": "भुगतान और अतिरिक्त उपयोग विवरण",
+  "selected item": "चयनित आइटम*",
+  "amount": "मात्रा*",
+  "excess time": "अतिरिक्त समय*",
+  "excess Amount": "अअधिक मात्रा*",
+  "balance amount": "शेष राशि*",
+  "GST": "18% जीएसटी राशि जोड़ी गई*",
+  "balance": "कुल राशि INCL शेष*",
+  "including GST": "जिसमें जीएसटी भी शामिल है",
+  "proceedpay": "चुकाने के लिए कार्रवाई शुरू करो",
+  "somethingwrong": "असफल, कुछ गलत हो गया",
+  "successmsg": "सफलता, आगे बढ़ना अच्छा है",
+  "dueamnt": "आपका भुगतान विफल रहा...! बकाया राशि आगे बढ़ाई जाएगी",
+  "paymntdue": "तकनीकी कारणों से आपका भुगतान विफल हो गया",
+  "technicalIssue": "तकनीकी कारणों से आपका भुगतान विफल हो गया",
+  "payNextTransaction": "अब आप अपना सामान पुनः प्राप्त कर सकते हैं और आपकी शेष राशि अगले लेनदेन के साथ आगे बढ़ा दी जाएगी।",
+  "BalanceAmnt": "शेष राशि :",
+  "retrievePayLater": "पिकअप करें और बाद में भुगतान करें",
+  "wait": "इंतज़ार …",
+  "openlock": "खुला दरवाज़ा",
+  "Cancel": "रद्द करें",
+  "ok": "ठीक है"
+    },
+
+    "PostPaySuccess" : {
+      "lockerOpen": "आपका दरवाज़ा खुला है.",
+  "lockerPayDesc": "आप अपना सामान एकत्र करते समय भुगतान कर सकते हैं।",
+  "close": "बंद करें"
+    },
+
+    "SelectLockerRetrievePage":{
+        "selectLockerRetrieveTitle": "अपना ताला यहां से प्राप्त करें",
+  "RetrieveSuccess": "उपयोग करने के लिए आपका धन्यवाद",
+  "ThankYou": "सुरक्षित, सरल और तनाव मुक्त",
+  "openLockerBtn": "खुला दरवाज़ा",
+  "close": "बंद करें"
+    },
+
+    "AfterLocksOpenMessage":{
+        "afterLocksOpenMessage": "चयनित लॉक खुला है, कृपया अपने आइटम्स को पुनः प्राप्त करने के बाद लॉक बंद करें"
+    },
+    "AdditionalAlerts" : {
+      "lockersFullTitle" : "कोई उपलब्ध लॉकर नहीं",
+      "lockersFullDesc" : "अभी तक सभी लॉकर बुक हो चुके हैं और नई बुकिंग के लिए कोई लॉकर उपलब्ध नहीं है, कुछ समय बाद पुनः प्रयास करें",
+      "lockersFullBtn" : "बंद करना",
+      "lockersTimeLimitTitle" : "बुकिंग फिलहाल अनुपलब्ध है",
+      "lockersTimeLimitDesc1" : "के बीच बुकिंग उपलब्ध होगी ",
+      "lockersTimeLimitDesc2" : " टकिट लॉकर का उपयोग करने के लिए धन्यवाद",
+      "loginBlockedUserTitle" : "आपका नंबर ब्लॉक कर दिया गया है",
+      "loginBlockedUserDesc" : "आप सेवा तक नहीं पहुंच सकते, क्योंकि आपका नंबर टकिट.इन द्वारा ब्लॉक कर दिया गया है। अधिक जानकारी के लिए ग्राहक सेवा से टकिट.इन पर संपर्क करें।"
+  }
+
+}
+
