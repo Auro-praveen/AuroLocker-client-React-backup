@@ -85,6 +85,9 @@
 
 .btn-container {
     margin: 20px 10%; 
+    /* max-width: 300px;
+    margin: auto !important;
+    margin-top: 20px; */
 }
 
 .btn-container-part-retr {

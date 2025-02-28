@@ -35,3 +35,7 @@ yarn.lock
 # Docker-specific files
 .dockerignore
 Dockerfile
+
+node_modules/
+build/
+dist/

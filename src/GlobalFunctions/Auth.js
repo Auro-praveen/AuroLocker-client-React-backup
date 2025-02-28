@@ -8,13 +8,16 @@ export const AuthProvider = ({ children }) => {
   const [occupiedLocks, setOccupiedLocks] = useState([]);
   const [currentPosition, SetCurrentPosition] = useState({
     lat: "",
-    long: ""
+    long: "",
   });
 
-  const [subscriptionType, setSubscriptionType] = useState("")
+  const [subscriptionType, setSubscriptionType] = useState("");
 
   const [isStrPostPay, setIsStrPostPay] = useState(false);
-  
+
+  const [publicFileRead, setPublicFileRead] = useState(false);
+  const [isPriceInPaise, setIsPriceInPaise] = useState(false);
+
   // const [paymentSuccessTransit, setPaymentSuccessTransit] = useState({
   //   MobileNo:"",
   //   LockerNo:"",
@@ -23,21 +26,22 @@ export const AuthProvider = ({ children }) => {
 
   const [userSelectedLockNo, setUserSelectedLockNo] = useState("");
 
-  const [existingUserBalanceAmount, setExistingUserBalanceAmount] = useState(null);
+  const [existingUserBalanceAmount, setExistingUserBalanceAmount] =
+    useState(null);
 
   const [passcode, setPasscode] = useState("");
-  const [seatBookCount, setSeatBookCount] = useState(0)
+  const [seatBookCount, setSeatBookCount] = useState(0);
 
   const [userDetails, setUserDetails] = useState({
     MobileNo: "",
     terminalID: "",
     TransactionId: "",
-    itemstored:"",
+    itemstored: "",
     userName: "",
     AvailableLocker: [],
     dob: "",
     hours: [],
-    GSTAmount:"",
+    GSTAmount: "",
     smallLockPriceMinute: "",
     mediumLockPriceMinute: "",
     largeLockPriceMinute: "",
@@ -50,10 +54,10 @@ export const AuthProvider = ({ children }) => {
 
   // for counting the seat books
   const seatCountFun = (count) => {
-    const totCount = seatBookCount+count;
+    const totCount = seatBookCount + count;
     // alert("total count : "+totCount)
     setSeatBookCount(totCount);
-  }
+  };
 
   const loginHandler = (val) => {
     setPhoneNumber(val);
@@ -61,19 +65,16 @@ export const AuthProvider = ({ children }) => {
 
   const passcodeHandler = (val) => {
     setPasscode(val);
-  }
+  };
 
   const logoutHandlerForSession = () => {
-    setPhoneNumber(null)
-    setUserDetails({})
-  }
-
+    setPhoneNumber(null);
+    setUserDetails({});
+  };
 
   const storePostPayHandler = () => {
-    setIsStrPostPay(true)
-  }
-
-
+    setIsStrPostPay(true);
+  };
 
   // const paymentSuccessTransitHandler = (obj) => {
   //   setPaymentSuccessTransit({
@@ -84,12 +85,12 @@ export const AuthProvider = ({ children }) => {
   // }
 
   const handleExistingUserBalanceAmount = (amount) => {
-    setExistingUserBalanceAmount(amount)
-  }
+    setExistingUserBalanceAmount(amount);
+  };
 
-  const subscritionTypeHandler = (type ) => {
+  const subscritionTypeHandler = (type) => {
     setSubscriptionType(type);
-  }
+  };
 
   const logoutHandler = () => {
     // setOccupiedLocks([]);
@@ -111,25 +112,40 @@ export const AuthProvider = ({ children }) => {
     SetCurrentPosition({
       ...currentPosition,
       lat: obj.lat,
-      long:obj.long
-    })
-  }
+      long: obj.long,
+    });
+  };
 
   const busyLockerFunction = (lockName) => {
     // if (occupiedLocks !== null) {
     //   const locks = [...occupiedLocks, ...lockName];
     //   setOccupiedLocks(locks);
     // } else {
-      
+
     // }
-    setOccupiedLocks(arr => [...arr, lockName]);
+    setOccupiedLocks((arr) => [...arr, lockName]);
   };
 
   const userSelectedLockHandler = (lock) => {
     const lockName = lock;
-    console.log(lockName)
-    setUserSelectedLockNo(lockName)
-  }
+    console.log(lockName);
+    setUserSelectedLockNo(lockName);
+  };
+
+  const fetchFromFileLocalPublicFile = async () => {
+    await fetch("/tuckit-client.json")
+      .then((data) => data.json())
+      .then((result) => {
+        
+
+        setPublicFileRead(true);
+        setIsPriceInPaise(result.priceInPaise);
+      })
+      .catch((err) => {
+        setPublicFileRead(true);
+        setIsPriceInPaise(false);
+      });
+  };
 
   return (
     <AuthContext.Provider
@@ -155,7 +171,10 @@ export const AuthProvider = ({ children }) => {
         storePostPayHandler,
         isStrPostPay,
         subscriptionType,
-        subscritionTypeHandler
+        subscritionTypeHandler,
+        fetchFromFileLocalPublicFile,
+        isPriceInPaise,
+        publicFileRead
       }}
     >
       {children}

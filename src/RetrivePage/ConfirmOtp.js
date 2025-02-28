@@ -14,6 +14,7 @@ import { UseLanguage } from "../GlobalFunctions/LanguageFun";
 import "./retrive.css";
 import LoadingButton from "@mui/lab/LoadingButton";
 import SaveIcon from "@mui/icons-material/Save";
+import AppFiles from "../GlobalVariable/otherImp.json";
 
 /*
   @Auther Praveenkumar 
@@ -124,7 +125,11 @@ function ConfirmOtp() {
               const retriveItmes = {
                 LOCKNO: data.LOCKNO,
                 orderId: data.orderId,
-                amount: Number(data.orderAmount),
+                // amount: Number(data.orderAmount),
+                // amount: Number(data.orderAmount) / 100,
+                amount: AppFiles.priceInPaise
+                ? Number(data.orderAmount) / 100
+                : Number(data.orderAmount),
                 GSTAmount: Number(data.GSTAmount)
               };
               RetriveAuth.setRetriveDet(retriveItmes);

@@ -39,6 +39,7 @@ import { containerClasses } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 import razorpayKey from "../GlobalVariable/rPay.json";
 import { isSafari } from "react-device-detect";
+import AppFile from "../GlobalVariable/otherImp.json";
 
 const MuiAlert = React.forwardRef(function MuiAlert(props, ref) {
   return <Alert elevation={3} ref={ref} variant="filled" {...props} />;
@@ -177,9 +178,16 @@ function SubmitLock(props) {
       LockerNo: props.userSelected,
       PacketType: "stlockcnf",
       hours: props.noOfHours,
-      amount: props.pricePerHour,
+      // amount: props.pricePerHour,
       // amount: amountIncGST,
       Balance: 0,
+      amount: AppFile.priceInPaise
+        ? Number(props.pricePerHour) * 100
+        : props.pricePerHour,
+      // Balance: AppFile.priceInPaise
+      //   ? Number(Auth.existingUserBalanceAmount) * 100
+      //   : Auth.existingUserBalanceAmount,
+
       DevTime: getCurrentTime(),
     };
 
@@ -207,8 +215,15 @@ function SubmitLock(props) {
       LockerNo: props.userSelected,
       PacketType: "stlockcnf",
       hours: props.noOfHours,
-      amount: props.pricePerHour,
-      Balance: Auth.existingUserBalanceAmount,
+      // amount: props.pricePerHour,
+      // Balance: Auth.existingUserBalanceAmount,
+
+      amount: AppFile.priceInPaise
+        ? Number(props.pricePerHour) * 100
+        : props.pricePerHour,
+      Balance: AppFile.priceInPaise
+        ? Number(Auth.existingUserBalanceAmount) * 100
+        : Auth.existingUserBalanceAmount,
       DevTime: getCurrentTime(),
     };
 
@@ -1236,38 +1251,39 @@ function SubmitLock(props) {
                       </>
                     )}
 
-                    {subscriptionType !== "RENT" && (
-                      <>
-                        {isPayWhileretrieveClick ? (
-                          <div className="btn-container">
-                            <LoadingButton
-                              loading
-                              loadingPosition="end"
-                              endIcon={<PendingActionsIcon />}
-                              variant="contained"
-                              color="primary"
-                            >
-                              {/* Pay While Retrieve */}
-                              {language.SelectedLockerData.paywhileretrive}
-                            </LoadingButton>
-                          </div>
-                        ) : (
-                          <div className="btn-container">
-                            <Button
-                              type="button"
-                              variant="contained"
-                              className="mui-btn-color-yellow"
-                              onClick={(e) => confirmBookForm(e, "paylater")}
-                              endIcon={<PendingActionsIcon />}
-                              fullWidth
-                            >
-                              {/* Pay While Retrieve */}
-                              {language.SelectedLockerData.paywhileretrive}
-                            </Button>
-                          </div>
-                        )}
-                      </>
-                    )}
+                    {subscriptionType !== "RENT" &&
+                      subscriptionType !== "RAILWAY" && (
+                        <>
+                          {isPayWhileretrieveClick ? (
+                            <div className="btn-container">
+                              <LoadingButton
+                                loading
+                                loadingPosition="end"
+                                endIcon={<PendingActionsIcon />}
+                                variant="contained"
+                                color="primary"
+                              >
+                                {/* Pay While Retrieve */}
+                                {language.SelectedLockerData.paywhileretrive}
+                              </LoadingButton>
+                            </div>
+                          ) : (
+                            <div className="btn-container">
+                              <Button
+                                type="button"
+                                variant="contained"
+                                className="mui-btn-color-yellow"
+                                onClick={(e) => confirmBookForm(e, "paylater")}
+                                endIcon={<PendingActionsIcon />}
+                                fullWidth
+                              >
+                                {/* Pay While Retrieve */}
+                                {language.SelectedLockerData.paywhileretrive}
+                              </Button>
+                            </div>
+                          )}
+                        </>
+                      )}
 
                     {/* {submitBtnStatus ? (
                     <div className="btn-container">

@@ -95,7 +95,7 @@ function StoreOrRetrive() {
 
   // to remove Console.log to display in the console of browser
 
-  // console.log = () => { };
+  console.log = () => { };
 
   // const language = LangAuth.userLanguage;
 
@@ -128,6 +128,8 @@ function StoreOrRetrive() {
 
   const getTerminalIdFromUrl = () => {
     var url_string = window.location.href; // www.test.com?filename=test
+
+    // var url_string = 'http://localhost:3000/storeRetrieve?terminalID=ORN'; // www.test.com?filename=test
     var url = new URL(url_string);
     var paramValue = url.searchParams.get("terminalID");
 

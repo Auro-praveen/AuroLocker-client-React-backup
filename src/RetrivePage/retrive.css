@@ -15,6 +15,26 @@ a {
     text-decoration: none;
 }
 
+.inactive-device{
+    background-color: #ecd3b7d6;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.inactive-device-header{
+    text-align: center;
+    font-size: 29px;
+    font-weight: 500;
+    color: rgb(255, 19, 19);
+}
+
+.inactive-device-text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(35, 69, 81);
+}
+
 .forgot-passcode-wind {
     padding: 25px;
     background-color: #fff;

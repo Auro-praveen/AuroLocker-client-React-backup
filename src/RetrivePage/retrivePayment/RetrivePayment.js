@@ -28,6 +28,8 @@ import {
   DialogTitle,
 } from "@mui/material";
 
+import AppFiles from "../../GlobalVariable/otherImp.json";
+
 /*
 
   @Auther Praveenkumar
@@ -161,7 +163,7 @@ function RetrivePayment() {
       // Display a confirmation dialog to the user
 
       console.log("clicked on back button");
-      
+
       const confirmLeave = window.confirm(
         "Are you sure, you want to leave? the page will be refreshed"
       );
@@ -182,7 +184,6 @@ function RetrivePayment() {
       // Clean up the event listener on component unmount
       window.removeEventListener("popstate", handleBackButton);
     };
-    
   }, []);
 
   // transaction id is static here
@@ -237,8 +238,10 @@ function RetrivePayment() {
     const obj = {
       ...retrivePaymentItem,
       PacketType: "retrexcepopay",
-      amount: totAmount - balanceAmount,
-      Balance: balanceAmount,
+      amount: AppFiles.priceInPaise
+        ? (Number(totAmount) - balanceAmount) * 100
+        : totAmount - balanceAmount,
+      Balance: AppFiles.priceInPaise ? balanceAmount * 100 : balanceAmount,
     };
     console.log(obj);
     fetch(/* paymentUrl */ serverUrl.path, {
@@ -525,10 +528,10 @@ function RetrivePayment() {
               </h5>
             )} */}
 
-            {postPay.Hour ? (
+            {/* {postPay.Hour ? (
               <h5 className="balance-amount-container">
                 {language.RetrieveOption.BalanceAmnt}{" "}
-                {/* Balance Amount :{" "} */}
+
                 <strong className="balance-amount">
                   <br />{" "}
                   {Number(postPay.totalAmount) % 1 === 0
@@ -539,7 +542,6 @@ function RetrivePayment() {
             ) : excessTimeUsage.EXHour ? (
               <h5 className="balance-amount-container">
                 {language.RetrieveOption.BalanceAmnt}{" "}
-                {/* Balance Amount :{" "} */}
                 <strong className="balance-amount">
                   <br />{" "}
                   {Number(excessTimeUsage.totalAmount) % 1 === 0
@@ -551,7 +553,6 @@ function RetrivePayment() {
               postPayExcessUsage.Hour && (
                 <h5 className="balance-amount-container">
                   {language.RetrieveOption.BalanceAmnt}{" "}
-                  {/* Balance Amount :{" "} */}
                   <strong className="balance-amount">
                     <br />{" "}
                     {Number(postPayExcessUsage.totAmount) % 1 === 0
@@ -560,7 +561,7 @@ function RetrivePayment() {
                   </strong>
                 </h5>
               )
-            )}
+            )} */}
 
             {/* <h4> You can Pay it while using locker for the next time !!</h4> */}
             <div className="form-container">
@@ -568,9 +569,10 @@ function RetrivePayment() {
                 color="primary"
                 className="mui-btn-color-yellow"
                 variant="contained"
-                onClick={() => payLaterFormSubmit()}
+                onClick={() => onIdle()}
               >
-                {language.RetrieveOption.retrievePayLater}
+                {/* {language.RetrieveOption.retrievePayLater} */}
+                {language.RetrieveOption.Cancel}
                 {/* Retrieve And PayLater */}
               </Button>
             </div>

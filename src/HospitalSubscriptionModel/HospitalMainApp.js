@@ -3,7 +3,6 @@ import HospitalLogin from "./HospitalLogin";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LockerOpenSuccessHospitals from "./HospitalLockerOpenSuccess";
 
-
 const HospitalMainApp = () => {
   return (
     <>

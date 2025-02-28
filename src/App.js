@@ -43,8 +43,49 @@ import MobileLockerAuthentication from "./mobile-lockers/server-connectivity/Mob
 import HospitalMainApp from "./HospitalSubscriptionModel/HospitalMainApp";
 import HospitalLogin from "./HospitalSubscriptionModel/HospitalLogin";
 import LockerOpenSuccessHospitals from "./HospitalSubscriptionModel/HospitalLockerOpenSuccess";
+import { useEffect } from "react";
+
+// import { io } from 'socket.io-client';
 
 function App() {
+  // useEffect(() => {
+
+  //   // example for websocket,
+
+  //   let socket;
+
+  //   try {
+  //     console.log("socket request and response here");
+  //     console.log("socket request and response here");
+  //     console.log("socket request and response here");
+  //     console.log("socket request and response here");
+
+  //     socket = io("http://localhost:8080/ev-stations/api/v1/websocket");
+
+  //     console.log("socket request =============== and response here");
+  //     socket.on("webhook-event", (data) => {
+  //       console.log("Received webhook data:", data);
+  //       // Update the UI
+  //     });
+  //   } catch (error) {
+  //     console.log("error : "+error);
+
+  //   }
+
+  //   return () => socket.disconnect();
+  // }, []);
+
+  // useEffect(() => {
+  //   fetch("/tuckit-client.json")
+  //     .then((data) => data.json())
+  //     .then((result) => {
+  //       console.log(result);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
+
   return (
     <div className="App">
       {/* <HospitalMainApp /> */}

@@ -18,6 +18,7 @@ import SaveIcon from "@mui/icons-material/Save";
 import Stack from "@mui/material/Stack";
 import Alert from "@mui/material/Alert";
 import { isSafari } from "react-device-detect";
+import AppFiles from "../GlobalVariable/otherImp.json";
 
 import Collapse from "@mui/material/Collapse";
 
@@ -48,6 +49,7 @@ function RetrivePage() {
   const [invalidPasscode, setInvalidPasscode] = useState(false);
   const [isWarning, setIsWarning] = useState(false);
   const [isActive, setIsActive] = useState(false);
+  const [isDeviceInactive, setIsDeviceInactive] = useState(false);
 
   const LangAuth = UseLanguage();
   const language = LangAuth.userLanguage;
@@ -133,7 +135,11 @@ function RetrivePage() {
               const retriveItmes = {
                 LOCKNO: data.LOCKNO,
                 orderId: data.orderId,
-                amount: Number(data.orderAmount),
+                // amount: Number(data.orderAmount),
+                // amount: Number(data.orderAmount) / 100,
+                amount: AppFiles.priceInPaise
+                  ? Number(data.orderAmount) / 100
+                  : Number(data.orderAmount),
                 GSTAmount: Number(data.GSTAmount),
                 balance: Number(data.balance),
               };
@@ -152,6 +158,8 @@ function RetrivePage() {
             setInvalidNumber(true);
           } else if (data.responseCode === "INPAC-201") {
             setInvalidPasscode(true);
+          } else if (data.responseCode === "DEVINACTIVE-201") {
+            setIsDeviceInactive(true);
           }
           setIsActive(false);
         })
@@ -212,88 +220,107 @@ function RetrivePage() {
             </Alert>
           </Collapse>
 
-          <Box
-            component="form"
-            // sx={{
-            //   "& .MuiTextField-root": { m: 1 },
-            // }}
-            noValidate
-            autoComplete="off"
-          >
-            <div className="passcode-window" id="passcode-wind-id">
-              <div className="passcode-header">
-                <h2>{language.RetrievePage.PasscodeTitle}</h2>
-                {/* <h2>Enter Details To Retrieve Your items</h2> */}
-              </div>
-              <div className="form-container">
-                <TextField
-                  type="number"
-                  label={language.RetrievePage.mobileNo}
-                  maxLength={10}
-                  name="MobileNo"
-                  variant="outlined"
-                  color="primary"
-                  value={retriveItems.MobileNo}
-                  onChange={(e) => eventHandler(e)}
-                  required
-                  focused
-                  fullWidth
-                />
-              </div>
-              <div className="form-container">
-                <TextField
-                  type="number"
-                  label={language.RetrievePage.passcodeLabel}
-                  maxLength={4}
-                  name="passcode"
-                  variant="outlined"
-                  color="primary"
-                  value={retriveItems.passcode}
-                  onChange={(e) => eventHandler(e)}
-                  required
-                  fullWidth
-                  focused
-                />
-              </div>
-              {isActive ? (
-                <div className="btn-container">
-                  <LoadingButton
-                    loading
-                    loadingPosition="end"
-                    endIcon={<SaveIcon />}
-                    variant="contained"
-                    color="primary"
-                    fullWidth
-                  >
-                    {language.RetrievePage.Generating}
-                    {/* generating */}
-                  </LoadingButton>
-                </div>
-              ) : (
-                <div className="form-container">
-                  <Button
-                    variant="contained"
-                    className="mui-btn-color-yellow"
-                    endIcon={<ThumbUpIcon />}
-                    onClick={() => verifyPasscode()}
-                    fullWidth
-                  >
-                    {language.RetrievePage.Confirm}
-                    {/* confirm */}
-                  </Button>
-                </div>
-              )}
+          {isDeviceInactive ? (
+            <>
+              {" "}
+              <hr />
+              <div className="inactive-device">
+                <h2 className="inactive-device-header">
+                  {language.NewUpdatedText.inactiveDeviceHeader}
+                </h2>
 
-              <div>
-                <Link to="/forgotPass">
-                  <p className="forgot-passcode">
-                    {language.RetrievePage.forgotPasscodeBtn}
-                    {/* forgot passcode? */}
-                  </p>
-                </Link>
+                <h4 className="inactive-device-text">
+                  {language.NewUpdatedText.inactiveDeviceDesc}
+                  {/* Device is Inactive at the moment, you can still pick-up your
+                  items by using the touch screen device, You can contact our
+                  customer care for help. */}
+                </h4>
               </div>
-            </div>
-          </Box>
+            </>
+          ) : (
+            <Box
+              component="form"
+              // sx={{
+              //   "& .MuiTextField-root": { m: 1 },
+              // }}
+              noValidate
+              autoComplete="off"
+            >
+              <div className="passcode-window" id="passcode-wind-id">
+                <div className="passcode-header">
+                  <h2>{language.RetrievePage.PasscodeTitle}</h2>
+                  {/* <h2>Enter Details To Retrieve Your items</h2> */}
+                </div>
+                <div className="form-container">
+                  <TextField
+                    type="number"
+                    label={language.RetrievePage.mobileNo}
+                    maxLength={10}
+                    name="MobileNo"
+                    variant="outlined"
+                    color="primary"
+                    value={retriveItems.MobileNo}
+                    onChange={(e) => eventHandler(e)}
+                    required
+                    focused
+                    fullWidth
+                  />
+                </div>
+                <div className="form-container">
+                  <TextField
+                    type="number"
+                    label={language.RetrievePage.passcodeLabel}
+                    maxLength={4}
+                    name="passcode"
+                    variant="outlined"
+                    color="primary"
+                    value={retriveItems.passcode}
+                    onChange={(e) => eventHandler(e)}
+                    required
+                    fullWidth
+                    focused
+                  />
+                </div>
+                {isActive ? (
+                  <div className="btn-container">
+                    <LoadingButton
+                      loading
+                      loadingPosition="end"
+                      endIcon={<SaveIcon />}
+                      variant="contained"
+                      color="primary"
+                      fullWidth
+                    >
+                      {language.RetrievePage.Generating}
+                      {/* generating */}
+                    </LoadingButton>
+                  </div>
+                ) : (
+                  <div className="form-container">
+                    <Button
+                      variant="contained"
+                      className="mui-btn-color-yellow"
+                      endIcon={<ThumbUpIcon />}
+                      onClick={() => verifyPasscode()}
+                      fullWidth
+                    >
+                      {language.RetrievePage.Confirm}
+                      {/* confirm */}
+                    </Button>
+                  </div>
+                )}
+
+                <div>
+                  <Link to="/forgotPass">
+                    <p className="forgot-passcode">
+                      {language.RetrievePage.forgotPasscodeBtn}
+                      {/* forgot passcode? */}
+                    </p>
+                  </Link>
+                </div>
+              </div>
+            </Box>
+          )}
         </div>
       </div>
     </>

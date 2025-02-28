@@ -23,6 +23,7 @@ import VerifyLockOpen from "../verifyLockOpen/VerifyLockOpen";
 import PinIcon from "@mui/icons-material/Pin";
 import VpnKeyOffIcon from "@mui/icons-material/VpnKeyOff";
 import RecommendIcon from "@mui/icons-material/Recommend";
+import AppFiles from "../GlobalVariable/otherImp.json";
 
 /*
   @Auther :- Praveen
@@ -59,6 +60,10 @@ function LoginOtp() {
 
   useEffect(() => {
     countDownTime();
+
+    // if (!Auth.publicFileRead) {
+    //   Auth.fetchFromFileLocalPublicFile();
+    // }
   }, []);
 
   useEffect(() => {
@@ -196,25 +201,41 @@ function LoginOtp() {
     let extraLargeAmnt;
 
     if (data.Small) {
-      smallLockAmnt = data.Small;
+      if (AppFiles.priceInPaise) {
+        smallLockAmnt = data.Small.map((amount) => amount / 100);
+      } else {
+        smallLockAmnt = data.Small;
+      }
     } else {
       smallLockAmnt = [0, 0, 0];
     }
 
     if (data.Medium) {
-      mediumLockAmnt = data.Medium;
+      if (AppFiles.priceInPaise) {
+        mediumLockAmnt = data.Medium.map((amount) => amount / 100);
+      } else {
+        mediumLockAmnt = data.Medium;
+      }
     } else {
       mediumLockAmnt = [0, 0, 0];
     }
 
     if (data.Large) {
-      largeLockAmnt = data.Large;
+      if (AppFiles.priceInPaise) {
+        largeLockAmnt = data.Large.map((amount) => amount / 100);
+      } else {
+        largeLockAmnt = data.Large;
+      }
     } else {
       largeLockAmnt = [0, 0, 0];
     }
 
     if (data.eLarge) {
-      extraLargeAmnt = data.eLarge;
+      if (AppFiles.priceInPaise) {
+        extraLargeAmnt = data.eLarge.map((amount) => amount / 100);
+      } else {
+        extraLargeAmnt = data.eLarge;
+      }
     } else {
       extraLargeAmnt = [0, 0, 0];
     }
@@ -236,6 +257,10 @@ function LoginOtp() {
       mediumLockPriceHours: mediumLockAmnt.slice(1),
       extraLargePriceHours: extraLargeAmnt.slice(1),
     };
+
+    console.log("----details here -----");
+    console.log(existingUSerDetails);
+
     Auth.existingUserHandler(existingUSerDetails);
   };
 

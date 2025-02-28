@@ -44,7 +44,7 @@
         "hello": "Hello",
         "welcometitle": "welcome to TUCKIT",
         "storeBtn": "Keep (Store)",
-        "retrieveBtn": "Pickup (Retrieve)"
+        "retrieveBtn": "Pickup (Take)"
     },
     "LoginPage": {
         "authenticateTitle": "Authentication",
@@ -210,18 +210,18 @@
         "note": "NOTE :",
         "PartialRetrieve": "PARTIAL RETRIEVE",
         "FullRetrieve": "FULL RETRIEVE",
-        "FullRetrieveInfo": "Full Pickup",
-        "FullretriveInfoAlert": "Full Pickup : ",
+        "FullRetrieveInfo": "Take all items",
+        "FullretriveInfoAlert": "Take All Items : ",
         "transactionComplete": "Transaction Complete",
         "Retrievedescription": "Retrieve Description",
         "LockIsOpenNow": "Door is Open Now",
         "fullretrieve": "Complete Booking",
-        "fullretrieveAlert": "Pickup all items & securely close the door. Locker available for new booking, T&C apply.",
-        "partialretrivepage": "Partial Booking ",
-        "partialretriveInfo": "Partial Pickup",
-        "partialretriveInfoAlert": "Partial Pickup : ",
+        "fullretrieveAlert": "Take all items and Securely close the door. Excess usage charges may apply, T&C apply",
+        "partialretrivepage": "MODIFY BOOKING ",
+        "partialretriveInfo": "Take few items or add items",
+        "partialretriveInfoAlert": "Take few items or add items : ",
         "RetrieveDescription": " Bookings active until items collected successfully. Additional charges applicable for excess usage (if any), T&C apply.",
-        "RetrieveDescriptionUpdated": "Service is chargeable after 30 or 60 minutes from your booking time. To pickup all your items, select Complete Booking. Please be aware that additional usage fees may apply, T&C apply.",
+        "RetrieveDescriptionUpdated": "- WARNING - Select this option only to add items or take few items from your locker. Modification charges apply after 30-60 minutes of booking. to take all items, select 'COMPLETE BOOKING'. Excess usage charges may apply, T&C apply.",
         "paymentdue": "Payment due for next transaction",
         "excessTimeUsage": "Extra usage",
         "load": "Loading...",
@@ -243,7 +243,8 @@
         "dueamnt": "Your payment failed...! Due amount will be carried further",
         "paymntdue": "Your payment failed due to techincal reasons",
         "technicalIssue": "Your payment failed due to techincal reasons",
-        "payNextTransaction": "You can retrieve your items now and your balance will be carried forward with next transaction.",
+        "payNextTransactionOLD": "You can retrieve your items now and your balance will be carried forward with next transaction.",
+        "payNextTransaction":"Your transaction is incomplete due to an unsuccessful payment. Please contact customer care (call 7204076777) for more information. Thank you.",
         "BalanceAmnt": "Balance Amount :",
         "retrievePayLater": "Pickup And Pay Later",
         "wait": "Wait ...",
@@ -287,5 +288,9 @@
         "lockersTimeLimitDesc2" : " Thanks for using the tuckit locker",
         "loginBlockedUserTitle" : "Your number has been blocked",
         "loginBlockedUserDesc" : "You cant access the service, as your number has been blocked by tuckit.in for more Contact customer care at tuckit.in"
+    },
+    "NewUpdatedText" : {
+        "inactiveDeviceHeader" : "Locker service is temporarily suspended!",
+        "inactiveDeviceDesc" : "We are upgrading for a better experience. You can collect your items by using the touch screen device, For help contact our customer care. Apologies for the inconvenience."
     }
 }

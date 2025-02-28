@@ -1,11 +1,12 @@
 .dynamic-layout-border{
     width: fit-content;
     /* border: 1px solid red; */
-    box-shadow: 0px 0px 4px 1px #5d58648f;
+    box-shadow: 0px 0px 10px 6px #999494fc;
     margin: auto;
     margin-top: 20px;
-    padding: 10px;
+    padding: 12px;
     border-radius: 10px;
+    background-color: #ffffff;
 }
 
 .locker-dynamic-row{

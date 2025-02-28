@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import "./test.css";
 
 const Test = () => {
-
-
+  
   const commonWidth = 40;
   const commonHeight = 40;
 
@@ -32,7 +31,6 @@ const Test = () => {
   };
 
   let count = 0;
-
 
   function renderAsLayout() {
     let completelockers = [];

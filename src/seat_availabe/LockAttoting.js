@@ -170,9 +170,11 @@ export const LockAttoting = () => {
         <SeatbookingNXVCNB1 />
       ) : terminalID === "NXVCJNRM" || terminalID === "NXVCARCR" ? (
         <SeatbookingNXVCJNRM />
-      ) : terminalID === "AHCEBGF" ? (
-        <SeatbookingAHCEBGF />
-      ) : terminalID === "AHCEB2F" ? (
+      ) : // : terminalID === "AHCEBGF" ? (
+      //   <SeatbookingAHCEBGF />
+      // )
+
+      terminalID === "AHCEB2F" ? (
         <SeatbookingAHCEB2F />
       ) : terminalID === "LULUHYDUG" ? ( // LULUHYDUG
         <SeatbookingLULUHYDUG />
